@@ -189,34 +189,43 @@ button:focus {
     outline: 2px solid var(--color-accent);
 }
 
-/* About */
 .majors {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 2.5rem 0;
+    list-style: none;
+    padding: 0;
 }
-
 .major {
-    background-color: var(--color-primary-variant);
-    padding: 2rem 1rem;
-    color: var(--color-text);
-    border-radius: 1rem;
-    cursor: default;
-    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-.major__icon {
-    font-size: 4rem;
-    margin: 1rem 0;
-    color: var(--color-accent);
-    transition: all 300ms ease;
-}
-
 .major__title {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
 }
 
 .major:hover .major__icon {
@@ -529,14 +538,6 @@ button:focus {
         margin-bottom: 0.5rem;
     }
 
-    .majors {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .major {
-        max-width: 25rem;
-    }
 
     .job {
         justify-content: center;
@@ -573,4 +574,58 @@ button:focus {
         bottom: 1.5rem;
         right: 1.5rem;
     }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {display: flex;
+    flex-direction: column;
+justify-content: center;
+    align-items: flex-end;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(172, 58, 58, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }

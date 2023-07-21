@@ -1,101 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO -->
-    <title>petsitter</title>
-    <meta
-      name="description"
-      content="Portfolio for world-renowned software
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO -->
+        <title>petsitter</title>
+        <meta
+            name="description"
+            content="Portfolio for world-renowned software
     engineer Ellie"
-    />
-    <meta name="author" content="Ellie" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- OG (Open Graph Data) -->
-    <meta property="og:title" content="언제WAYO" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="배포후 생성된 URL" />
-    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/9eb162ac0d.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/booking.css" />
-    
-    <!-- Javascript -->
-    <script type="module" src="src/main.js" defer></script>
-    <script type="module" src="src/projects.js" defer></script>
-    <script type="module" src="src/active_menu.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <!-- Home -->
-      <header class="header">
-        <div class="header__logo">
-          <!-- <img class="header__logo__img" src="images/favicon.ico" alt="logo" /> -->
-          <h1 class="header__logo__title"><a href="#">언제WAYO</a></h1>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <!-- <li><a class="header__menu__item active" href="#home">Home</a></li> -->
-            <li><a class="header__menu__item" href="#about">펫시터</a></li>
-            <li><a class="header__menu__item" href="#skills">로그인</a></li>
-            <li><a class="header__menu__item" href="#work">회원가입</a></li>
-            <li>
-              <a class="header__menu__item" href="#testimonial">예약 확인</a>
-            </li>
-            <li><a class="header__menu__item" href="booking.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="header__toggle" aria-label="navigation menu toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </header>
-        <!-- About -->
-        <section>
-<!-- 여기다가 코드작성 -->
-<!-- 여기다가 코드작성 -->
-<!-- 여기다가 코드작성 -->
-    </section>
-    <!-- Footer -->
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <h2 class="title">사업자번호 123-12-1234</h2>
-        <p class="description">대표번호 : 02-1234-1234</p>
-        <ul class="contact__links">
-          <li>
-            <a
-              class="contact__link"
-              href="https://github.com/yeonbeom14/petsitter"
-              target="_blank"
-              title="my github link"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact__link"
-              href="https://github.com/dream-ellie"
-              target="_blank"
-              title="my linkedin link"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+        />
+        <meta name="author" content="Ellie" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <!-- OG (Open Graph Data) -->
+        <meta property="og:title" content="언제WAYO" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="배포후 생성된 URL" />
+        <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Javascript -->
+        <script type="module" src="src/main.js" defer></script>
+        <script type="module" src="src/projects.js" defer></script>
+        <script type="module" src="src/active_menu.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__logo">
+                <!-- <img class="header__logo__img" src="images/favicon.ico" alt="logo" /> -->
+                <h1 class="header__logo__title"><a href="#">언제WAYO</a></h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <!-- <li><a class="header__menu__item active" href="#home">Home</a></li> -->/
+                    <li><a class="header__menu__item" href="#about">펫시터</a></li>
+                    /
+                    <li><a class="header__menu__item" href="#skills">로그인</a></li>
+                    <li><a class="header__menu__item" href="#work">회원가입</a></li>
+                    <li>
+                        <a class="header__menu__item" href="#testimonial">예약 확인</a>
+                    </li>
+                    <li><a class="header__menu__item" href="booking.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__toggle" aria-label="navigation menu toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Home -->
+            <section id="home">
+                <div class="home__container">
+                    <h2 class="home__title">
+                        전문 훈련사와 함께하는 <br />우리 아이의<br />특별한 산책<br />
+
+                        <strong class="home__title--strong">언제WAYO </strong>
+                    </h2>
+                    <p class="home__description"></p>
+                    <a class="home__contact" href="#booking.html">예약하기</a>
+                </div>
+            </section>
+            <!-- About -->
+            <section id="about" class="section max-container">
+
+
+                <ul class="majors">
+                    <li class="major">
+                        <p class="major__title">회원가입</p>
+                        <div class="container">
+                            <form action="/register" method="post">
+                                <label for="username">이메일:</label>
+                                <input type="text" id="username" name="username" required />
+                                <br />
+                                <label for="email">비밀번호:</label>
+                                <input type="email" id="email" name="email" required />
+                                <br />
+                                <label for="password">비밀번호 확인:</label>
+                                <input type="password" id="password" name="password" required />
+                                <br>
+                                <input type="submit" value="가입하기" />
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="jobs">
+                    <li class="job">
+                        <img src="images/jobs/google.png" alt="google logo" />
+                        <div>
+                            <p class="job__name">Google as Senior Software Engineer</p>
+                            <p class="job__period">2019 Oct - Until now</p>
+                        </div>
+                    </li>
+                    <li class="job">
+                        <img src="images/jobs/samsung.png" alt="samsung logo" />
+                        <div>
+                            <p class="job__name">Samsung as Software Engineer</p>
+                            <p class="job__period">2014 Sept - 2019 Oct</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Work -->
+            <section id="work" class="section">
+                <div class="max-container">
+                    <h2 class="title">My work</h2>
+                    <p class="description">Projects</p>
+                    <ul class="categories">
+                        <li>
+                            <button class="category category--selected" data-category="all">
+                                All <span class="category__count">8</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="category" data-category="front-end">
+                                Front-end <span class="category__count">4</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="category" data-category="back-end">
+                                Back-end <span class="category__count">2</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="category" data-category="mobile">
+                                Mobile <span class="category__count">2</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="projects">
+                        <li class="project" data-type="front-end">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project1.webp"
+                                    alt="project1"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #1</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="front-end">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project2.webp"
+                                    alt="project2"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #2</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="back-end">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project3.webp"
+                                    alt="project3"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #3</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="mobile">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project4.webp"
+                                    alt="project4"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #4</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="front-end">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project5.webp"
+                                    alt="project5"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #5</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="back-end">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project6.webp"
+                                    alt="project6"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #6</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="mobile">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project7.webp"
+                                    alt="project7"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #7</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="project" data-type="front-end">
+                            <a href="#" target="_blank">
+                                <img
+                                    src="images/projects/project8.webp"
+                                    alt="project8"
+                                    class="project__img"
+                                />
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Project #8</h3>
+                                    <p>Clone Coding with HTML, CSS</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Testimonials -->
+            <section id="testimonial" class="section max-container">
+                <h2 class="title">Testimonial</h2>
+                <p class="description">See what they say about me</p>
+                <ul class="testimonials">
+                    <li class="testimonial">
+                        <img
+                            src="images/testimonials/people1.webp"
+                            alt="people1"
+                            class="testimonial__img"
+                        />
+                        <div class="testimonial__bubble">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad
+                                iusto, ea alias, at sit libero laboriosam eaque eum, reiciendis
+                                obcaecati vitae non reprehenderit beatae officiis. Dolore corporis
+                                eveniet labore.
+                            </p>
+                            <p>
+                                <a href="#" class="testimonial__bubble__name">James Kim</a>
+                                /Google
+                            </p>
+                        </div>
+                    </li>
+                    <li class="testimonial">
+                        <img
+                            src="images/testimonials/people2.webp"
+                            alt="people2"
+                            class="testimonial__img"
+                        />
+                        <div class="testimonial__bubble">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                                adipisci quibusdam perspiciatis neque consequuntur nostrum quisquam
+                                dolore consequatur voluptatum animi laborum, sequi ipsum rerum
+                                voluptatibus sit ab similique quos velit?
+                            </p>
+                            <p>
+                                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+                                /Samsung
+                            </p>
+                        </div>
+                    </li>
+                    <li class="testimonial">
+                        <img
+                            src="images/testimonials/people3.webp"
+                            alt="people3"
+                            class="testimonial__img"
+                        />
+                        <div class="testimonial__bubble">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Perferendis, mollitia. Fugiat recusandae unde ducimus harum voluptas
+                                earum reiciendis expedita inventore quas ab eum dignissimos, maiores
+                                deleniti officiis qui, repudiandae voluptatibus?
+                            </p>
+                            <p>
+                                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+                                /Samsung
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Arrow up -->
+            <aside>
+                <a class="arrow-up" href="#home" title="back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </aside>
+        </main>
+        <!-- Footer -->
+        <footer id="contact" class="section">
+            <div class="max-container">
+                <h2 class="title">사업자번호 123-12-1234</h2>
+                <p class="description">대표번호 : 02-1234-1234</p>
+                <ul class="contact__links">
+                    <li>
+                        <a
+                            class="contact__link"
+                            href="https://github.com/yeonbeom14/petsitter"
+                            target="_blank"
+                            title="my github link"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="contact__link"
+                            href="https://github.com/dream-ellie"
+                            target="_blank"
+                            title="my linkedin link"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

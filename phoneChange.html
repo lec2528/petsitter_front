@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>마이 페이지</title>
+  <link rel="stylesheet" href="css/phoneChange.css" />
+
+</head>
+<body>
+  <form>
+    <label for="email">이메일:</label>
+    <input type="email" id="email" name="email" value="example@example.com" readonly>
+
+    <label for="address">주소:</label>
+    <input type="text" id="address" name="address" value="서울시 강남구" readonly>
+
+    <label for="phone">전화번호:</label>
+    <input type="tel" id="phone" name="phone" value="010-1234-5678" readonly>
+
+    <label for="newPhone">새로운 전화번호:</label>
+    <input type="tel" id="newPhone" name="newPhone" placeholder="새로운 전화번호를 입력하세요">
+
+    <input type="submit" value="정보 수정">
+  </form>
+
+  <div class="delete-account">
+    <button onclick="confirmDelete()">회원 탈퇴</button>
+  </div>
+
+  <script>
+    function confirmDelete() {
+      if (confirm("정말로 회원 탈퇴하시겠습니까?")) {
+        // 여기에 회원 탈퇴 처리를 위한 로직을 추가할 수 있습니다.
+        alert("회원 탈퇴가 완료되었습니다.");
+        // 탈퇴 처리 후 어떤 페이지로 이동할지 결정할 수도 있습니다.
+      }
+    }
+
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const newAddress = document.getElementById("newAddress").value;
+      const newPhone = document.getElementById("newPhone").value;
+
+      if (newAddress) {
+        document.getElementById("address").value = newAddress;
+      }
+
+      if (newPhone) {
+        document.getElementById("phone").value = newPhone;
+      }
+
+      // 여기에 서버로 전화번호 변경 요청을 보내는 로직을 추가할 수 있습니다.
+
+      alert("정보가 수정되었습니다.");
+    });
+  </script>
+</body>
+</html>

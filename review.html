@@ -21,15 +21,16 @@
             <div class="review-form">
                 <h2>펫시터 리뷰 폼</h2>
                 <form id="review-form">
-                    <label for="rating">별점:</label>
-                    <input type="number" id="rating" name="rating" min="1" max="5" required /><br />
-    
+                    
                     <label for="title">펫시터 이름:</label>
                     <input type="text" id="title" name="title" required /><br />
-    
+                    
                     <label for="content">리뷰 내용:</label><br />
                     <textarea id="content" name="content" rows="4" cols="50" required></textarea><br />
-    
+                    
+                    <label for="rating">별점:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required /><br />
+
                     <button type="submit">리뷰 작성</button>
                 </form>
             </div>
@@ -43,5 +44,18 @@
         </footer>
 
         <script src="main.js"></script>
+        <script>
+            function displayStars() {
+                const ratingInput = document.getElementById('rating').value;
+                const starsContainer = document.getElementById('stars-container');
+                const starIcons = '⭐️'.repeat(ratingInput);
+            
+                starsContainer.textContent = starIcons;
+            }
+        
+            // Add event listener to the rating input
+            const ratingInput = document.getElementById('rating');
+            ratingInput.addEventListener('input', displayStars);
+        </script>
     </body>
 </html>

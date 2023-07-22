@@ -1,58 +1,47 @@
-/* 전체 페이지 스타일링 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* 가로 중앙 정렬 */
-    align-items: center; /* 세로 중앙 정렬 */
-    height: 100vh; /* 화면 높이 전체를 차지하기 위해 추가 */
-}
-
-/* 컨테이너 스타일링 */
-.container {
-    width: 400px; /* 박스 너비 */
-    border: 1px solid #ccc;
-    padding: 1rem;
-    text-align: center; /* 내용 가운데 정렬 */
-}
-
-/* 헤더 스타일링 */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* 사용자 정보 스타일링 */
 .user-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-info form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-.user-avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 1rem;
+.user-info form label,
+.user-info form input {
+    margin-bottom: 10px;
 }
 
-/* 활동 내역 스타일링 */
-.user-activity ul {
-    list-style: none;
-    padding: 0;
+.user-info form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.user-activity li {
-    margin-bottom: 0.5rem;
+.user-info form input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
-/* 푸터 스타일링 */
-footer {
-    background-color: #333;
+/* Style for the home button */
+.home-button {
+    display: inline-block;
+    background-color: #007bff;
     color: #fff;
-    padding: 0.5rem;
-    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
 }

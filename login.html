@@ -1,101 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO -->
-    <title>petsitter</title>
-    <meta
-      name="description"
-      content="Portfolio for world-renowned software
-    engineer Ellie"
-    />
-    <meta name="author" content="Ellie" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- OG (Open Graph Data) -->
-    <meta property="og:title" content="언제WAYO" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="배포후 생성된 URL" />
-    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/9eb162ac0d.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/booking.css" />
-    
-    <!-- Javascript -->
-    <script type="module" src="src/main.js" defer></script>
-    <script type="module" src="src/projects.js" defer></script>
-    <script type="module" src="src/active_menu.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <!-- Home -->
-      <header class="header">
-        <div class="header__logo">
-          <!-- <img class="header__logo__img" src="images/favicon.ico" alt="logo" /> -->
-          <h1 class="header__logo__title"><a href="#">언제WAYO</a></h1>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <!-- <li><a class="header__menu__item active" href="#home">Home</a></li> -->
-            <li><a class="header__menu__item" href="#about">펫시터</a></li>
-            <li><a class="header__menu__item" href="#skills">로그인</a></li>
-            <li><a class="header__menu__item" href="#work">회원가입</a></li>
-            <li>
-              <a class="header__menu__item" href="#testimonial">예약 확인</a>
-            </li>
-            <li><a class="header__menu__item" href="booking.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="header__toggle" aria-label="navigation menu toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </header>
-        <!-- About -->
-        <section>
-<!-- 여기다가 코드작성 -->
-<!-- 여기다가 코드작성 -->
-<!-- 여기다가 코드작성 -->
-    </section>
-    <!-- Footer -->
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <h2 class="title">사업자번호 123-12-1234</h2>
-        <p class="description">대표번호 : 02-1234-1234</p>
-        <ul class="contact__links">
-          <li>
-            <a
-              class="contact__link"
-              href="https://github.com/yeonbeom14/petsitter"
-              target="_blank"
-              title="my github link"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact__link"
-              href="https://github.com/dream-ellie"
-              target="_blank"
-              title="my linkedin link"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Matteo Bruni" />
+        <title>Signin Template - tsParticles</title>
+
+        <!-- Custom styles for this template -->
+        <link href="css/particles.css" rel="stylesheet" />
+        <link href="css/auth.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="tsparticles"></div>
+        <main class="box">
+            <h2>로그인</h2>
+            <form>
+                <div class="inputBox">
+                    <label for="userName">이메일</label>
+                    <input
+                        type="text"
+                        name="userName"
+                        id="userName"
+                        placeholder="이메일을 입력해 주세요"
+                        required
+                    />
+                </div>
+                <div class="inputBox">
+                    <label for="userPassword">비밀번호</label>
+                    <input
+                        type="password"
+                        name="userPassword"
+                        id="userPassword"
+                        placeholder="비밀번호를 입력해주세요"
+                        required
+                    />
+                </div>
+                <div>
+                    <button type="submit" name="" style="float: left">제출하기</button>
+                    <a class="button" href="signup.html" style="float: left">회원가입</a>
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
+            integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="js/particles.js"></script>
+    </body>
 </html>

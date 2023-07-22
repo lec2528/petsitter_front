@@ -330,7 +330,7 @@
   }
   .bookingsection{
     margin: 30px auto 30px auto;
-    width: 800px;
+    width: 1000px;
 
   }
   .bookingdiv{
@@ -338,7 +338,7 @@
     width: 400px;
     height: 500px;
     color: var(--color-white);
-    ;
+    padding: 30px 30px 30px 30px;
 
   }
   .bookingform{

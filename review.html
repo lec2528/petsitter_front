@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>펫시터 리뷰 폼</title>
+        <link rel="stylesheet" href="./css/review.css" />
+    </head>
+    <body>
+        <header>
+            <!-- Your header content goes here -->
+        </header>
+
+        
+        <div class="review-card">
+            <!-- Pet Sitter Review Item -->
+            <div class="review-item">
+                <h3>펫시터 리뷰 제목</h3>
+                <p>별점: 5</p>
+                <p>펫시터 리뷰 내용이 여기에 들어갑니다. 펫시터 리뷰 내용이 여기에 들어갑니다.</p>
+            </div>
+            <div class="review-form">
+                <h2>펫시터 리뷰 폼</h2>
+                <form id="review-form">
+                    <label for="rating">별점:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required /><br />
+    
+                    <label for="title">펫시터 이름:</label>
+                    <input type="text" id="title" name="title" required /><br />
+    
+                    <label for="content">리뷰 내용:</label><br />
+                    <textarea id="content" name="content" rows="4" cols="50" required></textarea><br />
+    
+                    <button type="submit">리뷰 작성</button>
+                </form>
+            </div>
+            
+            <!-- You can add more review items here if needed -->
+            
+        </div>
+        
+        <footer>
+            <!-- Your footer content goes here -->
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

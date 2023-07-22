@@ -5,14 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
-    <title>petsitter</title>
-    <meta
-      name="description"
-      content="Portfolio for world-renowned software
-    engineer Ellie"
-    />
-    <meta name="author" content="Ellie" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>언제WAYO</title>
+    <link rel="shortcut icon" href="images\favicon.PNG" type="image/x-icon" />
     <!-- OG (Open Graph Data) -->
     <meta property="og:title" content="언제WAYO" />
     <meta property="og:type" content="website" />
@@ -42,18 +36,17 @@
     <header class="header">
       <div class="header__logo">
         <!-- <img class="header__logo__img" src="images/favicon.ico" alt="logo" /> -->
-        <h1 class="header__logo__title"><a href="#">언제WAYO</a></h1>
+        <h1 class="header__logo__title"><a href="index.html">언제WAYO</a></h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
           <!-- <li><a class="header__menu__item active" href="#home">Home</a></li> -->
-          <li><a class="header__menu__item" href="#about">펫시터</a></li>
-          <li><a class="header__menu__item" href="#skills">로그인</a></li>
-          <li><a class="header__menu__item" href="#">회원가입</a></li>
+          <li><a class="header__menu__item" href="petsitter.html">펫시터</a></li>
+          <li><a class="header__menu__item" href="login.html">로그인</a></li>
+          <li><a class="header__menu__item" href="signup.html">회원가입</a></li>
           <li>
-            <a class="header__menu__item" href="#testimonial">예약 확인</a>
+            <li><a class="header__menu__item" href="mypage.html">마이페이지</a></li>
           </li>
-          <li><a class="header__menu__item" href="booking.html">Contact</a></li>
         </ul>
       </nav>
       <button class="header__toggle" aria-label="navigation menu toggle">
@@ -71,55 +64,53 @@
             <strong class="home__title--strong">언제WAYO </strong>
           </h2>
           <p class="home__description"></p>
-          <a class="home__contact" href="#booking.html">예약하기</a>
+          <a class="home__contact" href="booking.html">예약하기</a>
         </div>
       </section>
       <!-- About -->
       <section id="about" class="section max-container">
-        <h2 class="title">How 언제WAYO?</h2>
+        <h2 class="title">언제WAYO?</h2>
         <p class="description">
-          숙련된 전문 훈련사와 함께하는 특별한 펫시터 서비스 입니다. 보호자님의
+          숙련된 전문 훈련사와 함께하는 특별한 펫시터 매칭 서비스 입니다. <br/>보호자님의
           스케줄 동안 반려견을 위한 특별한 추억을 만들겠습니다.
         </p>
+        <h2 class="title">펫시터</h2>
         <ul class="majors">
           <li class="major">
             <i class="fa-brands fa-html5 major__icon"></i>
-            <p class="major__title">Front-end</p>
-            <p>HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</p>
+            
+            <p class="major__title">이은찬</p>
+            <p>이은찬 경력 3년</p>
+            
           </li>
           <li class="major">
             <i class="fa-solid fa-mobile major__icon"></i>
-            <p class="major__title">Mobile</p>
-            <p>Android, iOS, React Navtive, Flutter, Java, Swift, Kotlin</p>
+            <p class="major__title">김연범</p>
+            <p>김연범 경력 5년</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-server major__icon"></i>
-            <p class="major__title">Back-end</p>
-            <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
+            <p class="major__title">최하영</p>
+            <p>최하영 경력 2년</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">김동현</p>
+            <p>김동현 경력 4년<br/>★:5점</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">김지안</p>
+            <p>김지안 경력 3년</p>
           </li>
         </ul>
-        <ul class="jobs">
-          <li class="job">
-            <img src="images/jobs/google.png" alt="google logo" />
-            <div>
-              <p class="job__name">Google as Senior Software Engineer</p>
-              <p class="job__period">2019 Oct - Until now</p>
-            </div>
-          </li>
-          <li class="job">
-            <img src="images/jobs/samsung.png" alt="samsung logo" />
-            <div>
-              <p class="job__name">Samsung as Software Engineer</p>
-              <p class="job__period">2014 Sept - 2019 Oct</p>
-            </div>
-          </li>
         </ul>
+        <a class="home__contact" href="petsitter.html">더 많은 펫시터 보러가기</a>
       </section>
       <!-- Work -->
       <section id="work" class="section">
         <div class="max-container">
-          <h2 class="title">My work</h2>
-          <p class="description">Projects</p>
+          <h2 class="title">이용후기</h2>
           <ul class="categories">
             <li>
               <button class="category category--selected" data-category="all">
@@ -249,71 +240,6 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Testimonials -->
-      <section id="testimonial" class="section max-container">
-        <h2 class="title">Testimonial</h2>
-        <p class="description">See what they say about me</p>
-        <ul class="testimonials">
-          <li class="testimonial">
-            <img
-              src="images/testimonials/people1.webp"
-              alt="people1"
-              class="testimonial__img"
-            />
-            <div class="testimonial__bubble">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad
-                iusto, ea alias, at sit libero laboriosam eaque eum, reiciendis
-                obcaecati vitae non reprehenderit beatae officiis. Dolore
-                corporis eveniet labore.
-              </p>
-              <p>
-                <a href="#" class="testimonial__bubble__name">James Kim</a>
-                /Google
-              </p>
-            </div>
-          </li>
-          <li class="testimonial">
-            <img
-              src="images/testimonials/people2.webp"
-              alt="people2"
-              class="testimonial__img"
-            />
-            <div class="testimonial__bubble">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-                adipisci quibusdam perspiciatis neque consequuntur nostrum
-                quisquam dolore consequatur voluptatum animi laborum, sequi
-                ipsum rerum voluptatibus sit ab similique quos velit?
-              </p>
-              <p>
-                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
-                /Samsung
-              </p>
-            </div>
-          </li>
-          <li class="testimonial">
-            <img
-              src="images/testimonials/people3.webp"
-              alt="people3"
-              class="testimonial__img"
-            />
-            <div class="testimonial__bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis, mollitia. Fugiat recusandae unde ducimus harum
-                voluptas earum reiciendis expedita inventore quas ab eum
-                dignissimos, maiores deleniti officiis qui, repudiandae
-                voluptatibus?
-              </p>
-              <p>
-                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
-                /Samsung
-              </p>
-            </div>
-          </li>
-        </ul>
       </section>
       <!-- Arrow up -->
       <aside>

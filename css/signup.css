@@ -167,7 +167,7 @@
     color: var(--color-accent);
   }
   .bookingsection{
-    /* margin-top: 2%; */
+    margin-top: 5%;
     width: 300px;
     height: 500px;
     margin-left: 40%;
@@ -177,7 +177,7 @@
 
 /* authbox */
 
-.loginbox {
+.signupbox {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
@@ -187,18 +187,18 @@
     
 }
 
-.loginbox .loginh2 {
+.signupbox .signuph2 {
     margin: 0 0 30px 0;
     padding: 0;
     color: #fff;
     text-align: center;
 }
 
-.loginbox .loginInputBox .loginlabel {
+.signupbox .signupInputBox .signuplabel {
     color: #fff;
 }
 
-.loginbox .loginInputBox .logininput {
+.signupbox .signupInputBox .signupinput {
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
@@ -211,7 +211,7 @@
     width: 100%;
 }
 
-.loginbox input[type="submit"], .loginbox button[type="submit"], a.button {
+.signupbox input[type="submit"], .signupbox button[type="submit"], a.button {
     font-family: sans-serif;
     background: #03a9f4;
     font-size: 11px;
@@ -229,7 +229,7 @@
     display: inline-block;
 }
 
-.loginbox input[type="submit"]:hover, .loginbox button[type="submit"]:hover, a.button:hover {
+.signupbox input[type="submit"]:hover, .signupbox button[type="submit"]:hover, a.button:hover {
     opacity: 0.8;
 }
 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>펫시터 소개</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software
+    engineer Ellie"
+    />
+    <meta name="author" content="Ellie" />
+    <link rel="shortcut icon" href="images\favicon.PNG" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="언제WAYO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/petsitter.css" />
+    
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Home -->
+      <header class="header">
+        <div class="header__logo">
+          <!-- <img class="header__logo__img" src="images/favicon.ico" alt="logo" /> -->
+          <h1 class="header__logo__title"><a href="index.html">언제WAYO</a></h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <!-- <li><a class="header__menu__item active" href="#home">Home</a></li> -->
+            <li><a class="header__menu__item" href="login.html">로그인</a></li>
+            <li><a class="header__menu__item" href="signup.html">회원가입</a></li>
+            <li>
+              <li><a class="header__menu__item" href="mypage.html">마이페이지</a></li>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle" aria-label="navigation menu toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </header>
+        <!-- About -->
+        <section class="petsittersection">
+          <section id="about" class="section max-container">
+            <h2 class="title">펫시터소개 </h2>
+            <ul class="majors">
+              <li class="major">
+                <i class="fa-brands fa-html5 major__icon"></i> 
+                <p class="major__title">이은찬</p>
+                <p>이은찬 경력 3년</p>
+              </li>
+              <li class="major">
+                <i class="fa-solid fa-mobile major__icon"></i>
+                <p class="major__title">김연범</p>
+                <p>김연범 경력 5년</p>
+              </li>
+              <li class="major">
+                <i class="fa-solid fa-server major__icon"></i>
+                <p class="major__title">최하영</p>
+                <p>최하영 경력 2년</p>
+              </li>
+              <li class="major">
+                <i class="fa-solid fa-server major__icon"></i>
+                <p class="major__title">김동현</p>
+                <p>김동현 경력 4년<br/>★:5점</p>
+              </li>
+              <li class="major">
+                <i class="fa-solid fa-server major__icon"></i>
+                <p class="major__title">김지안</p>
+                <p>김지안 경력 3년</p>
+              </li>
+            </ul>
+            </ul>
+            <a class="home__contact" href="petsitter.html">더 많은 펫시터 보러가기</a>
+          </section>
+    </section>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">사업자번호 123-12-1234</h2>
+        <p class="description">대표번호 : 02-1234-1234</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/yeonbeom14/petsitter"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/dream-ellie"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li> 
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

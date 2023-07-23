@@ -1,10 +1,11 @@
-useradress<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>회원가입</title>
+    <!-- SEO -->
+    <title>로그인</title>
     <meta
       name="description"
       content="Portfolio for world-renowned software
@@ -30,7 +31,7 @@ useradress<!DOCTYPE html>
       crossorigin="anonymous"
     ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/auth.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
@@ -42,25 +43,20 @@ useradress<!DOCTYPE html>
       <header class="header">
           <h1 class="header__logo__title"><a href="index.html">언제WAYO</a></h1>
          </div>
-         <nav class="header__nav">
-          <ul class="header__menu">
-            <!-- <li><a class="header__menu__item active" href="#home">Home</a></li> -->
-            <li><a class="header__menu__item" href="login.html">로그인</a></li>
-          </ul>
-        </nav>
+         <nav class="header__nav"></nav>
          <button class="header__toggle" aria-label="navigation menu toggle">
           <i class="fa-solid fa-bars"></i>
         </button>
       </header>
       <!-- section -->
       <section class="bookingsection">
-        <main class="signupbox">
-         <h2 class="signuph2">회원가입</h2>
+        <main class="loginbox">
+         <h2 class="loginh2">로그인</h2>
          <form>
-          <div class="signupInputBox">
-            <label for="userName" class="signuplabel">이메일</label>
+          <div class="loginInputBox">
+            <label for="userName" class="loginlabel">이메일</label>
             <input
-            class = "signupinput"
+            class = "logininput"
               type="text"
               name="userName"
               id="userName"
@@ -68,32 +64,10 @@ useradress<!DOCTYPE html>
               required
             />
           </div>
-          <div class="signupInputBox">
-            <label for="useradress" class="signuplabel">주소</label>
+          <div class="loginInputBox">
+            <label for="userPassword" class="loginlabel">비밀번호</label>
             <input
-            class = "signupinput"
-              type="text"
-              name="useradress"
-              id="useradress"
-              placeholder="주소를이메일을 입력해 주세요"
-              required
-            />
-          </div>
-          <div class="signupInputBox">
-            <label for="userPassword" class="signuplabel">비밀번호</label>
-            <input
-            class="signupinput"
-              type="password"
-              name="userPassword"
-              id="userPassword"
-              placeholder="비밀번호를 입력해주세요"
-              required
-            />
-          </div>
-          <div class="signupInputBox">
-            <label for="userPassword" class="signuplabel">비밀번호 확인</label>
-            <input
-            class="signupinput"
+            class="logininput"
               type="password"
               name="userPassword"
               id="userPassword"
@@ -102,8 +76,10 @@ useradress<!DOCTYPE html>
             />
           </div>
           <div>
-            <button type="submit" name="" style="float: left">회원가입</button>
-            
+            <button type="submit" name="" style="float: left">제출하기</button>
+            <a class="button" href="signup.html" style="float: left"
+              >로그인</a
+            >
           </div>
         </form>
       </div>
@@ -136,25 +112,15 @@ useradress<!DOCTYPE html>
             </li>
           </ul>
       </footer>
-      <script
-      src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
-      integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="js/particles.js"></script>
-
-  <script>
-    $("form").on("submit", function () {
-      if (document.getElementById("email").value == "") {
-        alert("이메일을 입력해주세요");
-      }
-    });
-  </script>
           <!-- Bootstrap JS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+MtoAqKtFJNUXs5nEdkF9jL3Qo9Y0Y0b4tFf6+RGcw6zF9H"
+    crossorigin="anonymous"
+  ></script>
       </main>
       
 
 
   </body>
-
 </html>
